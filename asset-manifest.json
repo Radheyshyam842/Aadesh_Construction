@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Aadesh_Construction/static/css/main.3a3c89a1.css",
-    "main.js": "/Aadesh_Construction/static/js/main.c346b0bf.js",
+    "main.css": "/Aadesh_Construction/static/css/main.c709f490.css",
+    "main.js": "/Aadesh_Construction/static/js/main.9d5b428b.js",
     "static/media/img2.jpg": "/Aadesh_Construction/static/media/img2.093d3ff8c5a29d3a674b.jpg",
     "static/media/img3.jpg": "/Aadesh_Construction/static/media/img3.d5ad23322522d2df207d.jpg",
     "static/media/img5.jpg": "/Aadesh_Construction/static/media/img5.cc0fa2c11aa80d9a91fc.jpg",
     "static/media/img1.jpg": "/Aadesh_Construction/static/media/img1.0e3b7fed66485527d3db.jpg",
     "static/media/img4.jpg": "/Aadesh_Construction/static/media/img4.68f670c61cc18763d24c.jpg",
     "index.html": "/Aadesh_Construction/index.html",
-    "main.3a3c89a1.css.map": "/Aadesh_Construction/static/css/main.3a3c89a1.css.map",
-    "main.c346b0bf.js.map": "/Aadesh_Construction/static/js/main.c346b0bf.js.map"
+    "main.c709f490.css.map": "/Aadesh_Construction/static/css/main.c709f490.css.map",
+    "main.9d5b428b.js.map": "/Aadesh_Construction/static/js/main.9d5b428b.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a3c89a1.css",
-    "static/js/main.c346b0bf.js"
+    "static/css/main.c709f490.css",
+    "static/js/main.9d5b428b.js"
   ]
 }
