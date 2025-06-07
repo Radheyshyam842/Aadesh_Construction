@@ -1,0 +1,240 @@
+/* src/components/Services.css */
+
+.services-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 60px;
+    background-color: #f4f4f4;
+    margin: 80px 0;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  }
+  
+  .services-image img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .services-image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .services-content {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .services-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff9800; /* Accent color for heading */
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+  
+  .services-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: #666;
+    font-weight: 400;
+  }
+  
+  .services-content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .services-content li {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: #333;
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .services-content li strong {
+    margin-left: 5px;
+    font-weight: 600;
+  }
+  
+  .services-content li::before {
+    content: '🔸'; /* Custom bullet point */
+    margin-right: 10px;
+    font-size: 1.5rem;
+    color: #ff6b35;
+  }
+  
+  .services-section {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #111111 0%, #2c2c2c 100%);
+    color: #ffffff;
+    min-height: 100vh;
+  }
+  
+  .services-header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .services-title .gradient-text {
+    background: linear-gradient(45deg, #FFD700, #FFA500, #FFD700);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 3.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: shimmer 2s infinite;
+  }
+  
+  .services-subtitle {
+    color: #FFA500;
+    font-size: 1.5rem;
+    margin-top: 15px;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  .service-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 30px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 215, 0, 0.1);
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, rgba(255, 215, 0, 0.1), transparent);
+    transform: translateX(-100%);
+    transition: 0.5s;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(255, 215, 0, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  }
+  
+  .service-card:hover::before {
+    transform: translateX(100%);
+  }
+  
+  .service-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .service-title {
+    color: #FFD700;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  
+  .service-description {
+    color: #ffffff;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .service-features {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .feature-item {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    color: #FFA500;
+  }
+  
+  .feature-bullet {
+    color: #FFD700;
+    margin-right: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .consultation-banner {
+    margin-top: 80px;
+    padding: 40px;
+    background: linear-gradient(45deg, rgba(255, 215, 0, 0.1), rgba(255, 165, 0, 0.1));
+    border-radius: 20px;
+    text-align: center;
+  }
+  
+  .consultation-button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    color: #000;
+    background: linear-gradient(45deg, #FFD700, #FFA500);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .consultation-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  @keyframes shimmer {
+    0% { background-position: -200% center; }
+    100% { background-position: 200% center; }
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  @media (max-width: 768px) {
+    .services-container {
+      flex-direction: column;
+      padding: 40px;
+      text-align: center;
+    }
+  
+    .services-image img {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .services-title .gradient-text {
+      font-size: 2.5rem;
+    }
+    
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+  }

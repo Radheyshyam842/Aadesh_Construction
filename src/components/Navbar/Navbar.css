@@ -1,0 +1,197 @@
+/* src/components/Navbar.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .navbar-logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #f7c5c5;
+    text-decoration: none;
+  }
+  
+  .navbar-links {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+  }
+  
+  .navbar-links li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .navbar-links li a:hover {
+    color: #f7c5c5;
+  }
+  
+  .navbar-social {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .navbar-social a {
+    color: #333;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .navbar-social a:hover {
+    color: #f7c5c5;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar-links {
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+    }
+  
+    .navbar-social {
+      margin-top: 10px;
+    }
+  }
+  .navbar-social a {
+    color: #333;
+    font-size: 1.2rem; /* Size of icons */
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .navbar-social a:hover {
+    color: #f7c5c5;
+  }
+
+ /* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Logo Styling */
+.navbar-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #f7c5c5;
+  text-decoration: none;
+  margin-right: auto; /* Aligns the logo to the left on larger screens */
+}
+
+/* Links Styling */
+.navbar-links {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+}
+
+.navbar-links li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar-links li a:hover {
+  color: #f7c5c5;
+}
+
+/* Social Icons Styling */
+.navbar-social {
+  display: flex;
+  gap: 15px;
+  margin-left: auto; /* Aligns social icons to the right on larger screens */
+}
+
+.navbar-social a {
+  color: #333;
+  font-size: 1.2rem; /* Size of icons */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar-social a:hover {
+  color: #f7c5c5;
+}
+
+/* Hamburger icon styling */
+.hamburger {
+  display: none; /* Hidden by default */
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  /* Show hamburger on mobile and hide navbar links initially */
+  .hamburger {
+      display: block;
+  }
+
+  .navbar-links {
+      display: none; /* Hide links initially */
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+      margin-top: 10px;
+      text-align: center;
+  }
+
+  /* Show links when active */
+  .navbar-links.active {
+      display: flex;
+  }
+
+  /* Center the social icons below the logo */
+  .navbar-social {
+      width: 100%;
+      justify-content: center;
+      margin-top: 10px;
+  }
+}
+
