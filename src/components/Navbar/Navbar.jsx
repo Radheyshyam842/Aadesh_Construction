@@ -79,10 +79,14 @@ const Navbar = () => {
       <nav className="bg-white shadow-lg w-full z-40 sticky top-0">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center py-4">
-            {/* Logo */}
-            <h1 className="text-2xl md:text-3xl font-bold text-gray-800 hover:text-gray-700 transition-colors duration-300">
-              Aadesh Construction
-            </h1>
+            {/* Logo - using public folder path */}
+            <a href="/" className="flex items-center">
+              <img 
+               src={`${process.env.PUBLIC_URL}/assets/logo.jpg`}
+                alt="Aadesh Construction Logo" 
+                className="h-12 w-auto hover:opacity-90 transition-opacity duration-300"
+              />
+            </a>
             
             {/* Hamburger icon for mobile */}
             <div className="lg:hidden">
