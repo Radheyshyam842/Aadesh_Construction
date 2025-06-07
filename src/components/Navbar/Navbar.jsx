@@ -44,11 +44,11 @@ const Navbar = () => {
             <div className="flex flex-col md:flex-row items-center space-y-3 md:space-y-0 md:space-x-8 w-full md:w-auto">
               <div className="flex items-center space-x-2 hover:scale-105 transition-transform duration-300 cursor-pointer group">
                 <FontAwesomeIcon icon={faPhone} className="text-sm group-hover:text-yellow-400 transition-colors" />
-                <span className="text-sm group-hover:text-yellow-400 transition-colors">+91 123 456 7890</span>
+                <span className="text-sm group-hover:text-yellow-400 transition-colors">+91 9785311771,9928778239</span>
               </div>
               <div className="flex items-center space-x-2 hover:scale-105 transition-transform duration-300 cursor-pointer group">
                 <FontAwesomeIcon icon={faEnvelope} className="text-sm group-hover:text-yellow-400 transition-colors" />
-                <span className="text-sm group-hover:text-yellow-400 transition-colors">info@shubhsankalp.com</span>
+                <span className="text-sm group-hover:text-yellow-400 transition-colors">info@aadesh@gmail.com</span>
               </div>
               <div className="flex items-center space-x-2 hover:scale-105 transition-transform duration-300 cursor-pointer group">
                 <FontAwesomeIcon icon={faLocationDot} className="text-sm group-hover:text-yellow-400 transition-colors" />
